@@ -1,11 +1,12 @@
 document.getElementById('signupForm').addEventListener('submit', function(event) {
     event.preventDefault();
-
+    var domain = document.getElementById("domain").value;
     var firstName = document.getElementById('firstName').value;
     var lastName = document.getElementById('lastName').value;
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
+    localStorage.setItem('domain', domain);
     localStorage.setItem('firstName', firstName);
     localStorage.setItem('lastName', lastName);
     localStorage.setItem('email', email);
