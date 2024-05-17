@@ -196,7 +196,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
-    box-shadow: 0px 0px 8px rgba(0,0,0,0.7)
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.7);
 }
 .signupmodal-progress-circle {
     position: absolute;
