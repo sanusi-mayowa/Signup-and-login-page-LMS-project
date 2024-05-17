@@ -109,17 +109,6 @@ body{
     margin: 0 auto;
     margin-top: 20px;
 }
-.signupmodal-outter {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow: hidden;
-    z-index: 9999;
-    font-size: 12px
-}
 .me{
     width: 100% !important;
     margin-bottom: 20px;
@@ -176,6 +165,17 @@ body{
 .input-password-wrapper li i:focus{
     box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25);
 }
+.signupmodal-outter {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    z-index: 9999;
+    font-size: 12px
+}
 .signupmodal-inner {
     position: absolute;
     display: flex;
@@ -191,7 +191,7 @@ body{
     border: none !important;
     outline: 0 !important;
     background-color: #3e75ff;
-    background-image: url("/wp-content/themes/talentlms2021/front-end/src/assets/img/signup_loader_bg.png");
+    /* background-image: url("/wp-content/themes/talentlms2021/front-end/src/assets/img/signup_loader_bg.png"); */
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
