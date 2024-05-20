@@ -27,6 +27,8 @@ body{
 }
 .site-main {
     padding-top: 76px;
+    max-width: 450px;
+    margin: 0 auto;
 }
 .first-h1 {
     text-align: center;
@@ -79,7 +81,7 @@ body{
 }
 .form-control:focus {
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25)
+    /* box-shadow: 0 0 0 .2rem #57A6A1; */
 }
 .form-group-label-anim input {
     border-radius: 12px;
@@ -91,11 +93,11 @@ body{
     font-size: 1.06rem;
     font-weight: 400;
     color: #000;
-    transition: background-color 200ms ease-in, box-shadow 400ms ease-out
+    transition: background-color 200ms ease-in, box-shadow 400ms ease-out;
 }
 .btn--blue {
     border: none;
-    background-color: #1b68b3;
+    background-color: #4242ab;
     height: 56px;
     color: #fff;
     cursor: pointer;
@@ -113,6 +115,10 @@ body{
     width: 100% !important;
     margin-bottom: 20px;
 }
+.strong{
+    color: #171754;
+    font-weight: 600;
+}
 .form-group-label-anim {
     position: relative;
 }
@@ -128,9 +134,10 @@ body{
     pointer-events: none;
     transition: .5s;
 }
-
 .form-group-label-anim input:focus~label{
     top: -1px;
+    background: #ffffff;
+    padding: 0;
 }
 .input-password-wrapper{
     display: flex;
@@ -161,12 +168,9 @@ body{
     outline: 0;
     width: 100%;
 }
-.input-password-wrapper input:focus,
-.input-password-wrapper li i:focus{
-    box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25);
-}
-.input-password-wrapper:focus{
-    box-shadow: 0 0 0 .2rem rgba(0,123,255,0.25)
+.form-group .text-center{
+    text-align: center;
+    margin-top: 10px;
 }
 .signupmodal-outter {
     position: fixed;
@@ -198,7 +202,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
-    box-shadow: 0px 0px 8px rgba(0,0,0,0.7);
+    /* box-shadow: 0px 0px 8px rgba(0,0,0,0.7); */
 }
 .signupmodal-progress-circle {
     position: absolute;
@@ -233,6 +237,14 @@ body{
     color: #fff;
     box-sizing: border-box
 }
+.second-h1{
+    margin: 52px 0;
+    font-size: 40px;
+    font-weight: 300;
+    color: #216eb9;
+    text-align: center;
+}
+
 @media screen and (max-width: 1024px) {
     .form-smile{
         display: none;
@@ -261,3 +273,28 @@ body{
         display: none;
     }
 }
+
+.tl-clouds-container {
+    font-size:0.7em;
+    position:fixed;
+    display:none;
+    bottom:0;
+    z-index:-1;
+  }
+  .clouds-left-part, .clouds-right-part {
+    position:fixed;
+    z-index:0;
+    bottom:0;
+    width:35%;
+    height:auto;
+  }
+  .clouds-left-part { left:0; }
+  .clouds-right-part { right:0; }
+  .clouds-shuttle-img {
+    position:fixed;
+    right:5%;
+    bottom:0;
+    z-index:1;
+    width:25%;
+    height:auto;
+  }
