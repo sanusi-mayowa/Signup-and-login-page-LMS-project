@@ -24,12 +24,13 @@
     <div class="container text-center p-3 col-lg-6">
         <p style="color: #2c76bc; font-size: 40px;" class="mt-5 small-p">Log in to your online training</p>
     </div>
+    <form action="" id="loginForm">
     <div class="container mx-auto col-lg-8 site-main-2 pt-lg-5">
         <div class="row mx-auto">
-            <label for="domain" class="col-sm-3 col-form-label">DOMAIN</label>
+            <label for="loginDomain" class="col-sm-3 col-form-label">DOMAIN</label>
             <div class="col-sm-6">
               <div class="input-group" style="width: 100%;">
-                <input type="text" id="domain" class="form-control">
+                <input type="text" id="loginDomain" class="form-control">
                 <span class="input-group-text bg-white label"><b>.talentmls.com</b></span>
               </div>
             </div>
@@ -61,6 +62,7 @@
             </div>
           </div>
     </div>
+    </form>
     <div class="signupmodal-outter" id="signupModal" style="display:none;">
         <div class="signupmodal-inner">
             <div class="signupmodal-progress-circle"></div>
@@ -74,5 +76,6 @@
         <img class="clouds-right-part" src="assests/clouds_right_part.svg" alt="Right cloud" />
         <img class="clouds-shuttle-img" src="assests/clouds_shuttle.svg" alt="Clouds shuttle" />
     </div> 
+    <script src="login.js"></script>
 </body>
 </html>
