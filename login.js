@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
   
     loginForm.addEventListener('submit', function (event) {
       event.preventDefault();
-    var domain = document.getElementById('loginDomain')
+      var domain = document.getElementById('loginDomain').value
       var email = document.getElementById('inputUsername').value;
       var password = document.getElementById('inputPassword').value;
   
       const storedAccount = JSON.parse(localStorage.getItem('account'));
   
-      if (storedAccount && storedAccount.email === email && storedAccount.password === password) {
+      if (storedAccount && storedAccount.email === email && storedAccount.password === password && storedAccount.domain === domain) {
         var signupModal = document.getElementById('signupModal');
         signupModal.style.display = 'flex';
   
