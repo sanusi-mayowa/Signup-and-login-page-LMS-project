@@ -181,7 +181,7 @@ body{
     background-color: rgba(0,0,0,0.5);
     overflow: hidden;
     z-index: 9999;
-    font-size: 12px
+    font-size: 12px;
 }
 .signupmodal-inner {
     position: absolute;
@@ -217,7 +217,7 @@ body{
     border: 0.5em solid rgba(160,160,160,0.57);
     box-sizing: border-box;
     border-bottom-color: white;
-    animation: rotation 0.6s linear infinite
+    animation: rotation 0.6s linear infinite;
 }
 @keyframes rotation {
     from {
@@ -277,6 +277,69 @@ label{
   width:25%;
   height:auto;
 }
+.navbar-2{
+  width: 100%;
+  background: #fff;
+  height: 80px;
+  position: relative;
+  text-align: center;
+}
+.navbar-2 img{
+  margin-top: 15px;
+}
+.section-child{
+  clip-path: polygon(0 0, 100% 0, 100% 5%, 0 30%);
+  background: #f4f5f7;
+  height: 600px;
+  position: absolute;
+  width: 100%;
+}
+section{
+  position: relative; 
+}
+.section-child h2{
+    font-size: 45px;
+    font-weight: 500;
+    padding-left: 20px;
+    margin-top: 45px;
+    color: #282530;
+}
+.site-main-3{
+    max-width: 1000px;
+    background: #fff;
+    margin-top: 200px !important;
+    margin: 0 auto;
+}
+.first-p{
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #212529;
+}
+.second-p{
+    color: #282530;
+    font-weight: 500;
+    font-size: 17px;
+}
+.explain{
+    margin-top: 30px;
+}
+.explain-first-p{
+    color: #111111;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.head span{
+    color: #000;
+    font-weight: 600;
+    font-size: 19px;
+}
+.head {
+    font-size: 17px;
+    font-weight: 500;
+    color: #282530;
+}
 
 @media screen and (max-width: 1024px) {
     .form-smile{
@@ -314,6 +377,9 @@ label{
     } 
     .tl-clouds-container{
         display: none;
+    }
+    .section-child h2{
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 162px) {
