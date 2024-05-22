@@ -1,5 +1,3 @@
-
-// Toggle Password Visibility
 const signupPassword = document.getElementById('password');
 const togglePassword = document.getElementById('togglePassword');
 
